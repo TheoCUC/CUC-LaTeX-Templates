@@ -10,8 +10,8 @@
 **本科阶段**：
 
 * 中国传媒大学毕业论文（设计）开题报告表
-* 中国传媒大学毕业论文（设计）中期报告表
-* 中国传媒大学毕业论文模板
+* [中国传媒大学毕业论文（设计）中期报告表](本科/中期报告)
+* [中国传媒大学毕业论文模板](https://github.com/isaaccaa/LaTeX_CUC)
 
 **考研/保研材料**：
 
@@ -34,8 +34,23 @@
 
 * ...
 
-> 祝大家使用愉快！
+**演示文稿**：
+
+* [Beamer模板](https://github.com/isaaccaa/Beamer_CUC)
+* [普鲁士蓝Slidev模板](https://github.com/isaaccaa/slidev-theme-prussianblue)
+* [实验室Slidev模板](https://github.com/isaaccaa/slidev-theme-vatis)
+* Powerpoint模板
+* Keynote模板
+
+## 重要提醒
+
+* 本模板未经学校相关部门审核及授权，使用前请务必斟酌。
+* 本模板仍处于开发中，不保证接口的稳定性。在撰写论文的过程中，请慎重考虑是否要同步进行更新。
+* 任何由于使⽤本模板⽽引起的论⽂格式审查问题均与本模板作者⽆关。
+
+> 同[fduthesis](https://github.com/stone-zeng/fduthesis)
 
 ## 更新日志
 
 * 2023.1.15 上传中国传媒大学学术学位硕士研究生学位论文选题报告申请表
+* 2023.1.15 上传中国传媒大学毕业论文（设计）中期报告表
