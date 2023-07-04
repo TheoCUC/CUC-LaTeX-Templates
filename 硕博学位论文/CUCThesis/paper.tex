@@ -1,0 +1,108 @@
+\documentclass{CUCThesis}
+
+% 使用该宏包可以为参考文献、图表、公式添加超链接。但是可能会影响观感，可根据需要自行选择是否使用。
+% 默认样式：使用方框标识超链接，很多期刊论文中有用
+\usepackage[]{hyperref}
+% 简化样式：不用方框，看起来会简洁一点，有各种颜色标识不同的类别
+% \usepackage[colorlinks,linkcolor=red,anchorcolor=blue,citecolor=green]{hyperref}
+% 保险样式：都是黑色的超链接，可以点击
+% \usepackage[colorlinks,linkcolor=black,anchorcolor=black,citecolor=black,urlcolor=black]{hyperref}
+
+% 指定宋体的格式为Windows下的宋体，需要配套的字体文件
+\setCJKmainfont{SIMSUN.TTC}
+\setCJKfamilyfont{heiti}{SimHei.ttf}
+% 指定图片文件的默认目录
+\graphicspath{{figures/}}
+
+% 参考文献文件位置
+\addbibresource{ref.bib}
+
+% 论文参数设置
+\setup{
+  % 论文类别【博士学位论文/硕士学位论文/硕士专业学位论文/同等学力申请硕士学位论文】
+  Type = 硕士学位论文,
+  % 页眉 【中国传媒大学硕士学位论文/中国传媒大学博士学位论文】
+  Header = 中国传媒大学硕士学位论文,
+  % 分类号
+  Classification = （按中国图书分类法）,
+  % 密级
+  Security = （注明密级与保密期限）,
+  % 学号
+  StudentID = 202120081000000,
+  % 中文论文题目（封面）
+  TitleinCover = \customtitle{基于 \LaTeX 的,硕博学位论文模板制作研究},
+  % 英文论文题目（封面）
+  TitleinCoverEN = \customtitle{Research on the Production of a LaTeX-based , {Master’s , and Doctoral Thesis Template}, CUC },
+  % 中文论文题目（正文）
+  TitleinBody = 基于 \LaTeX 的硕博学位论文模板制作研究,
+  % 英文论文题目（正文）
+  TitleinBodyEN = {Research on the Production of a LaTeX-based , {Master’s , and Doctoral Thesis Template}, CUC},
+  % 申请人姓名
+  Author = 王小帅,
+  % 指导教师
+  Supervisor = 蒋大帅,
+  % 专业名称
+  Major = \LaTeX 模板研发专业,
+  % 研究方向
+  Research = 学位论文研发,
+  % 所在学院
+  College = 信息与通信工程学院,
+  % 提交日期
+  Date = 2022年7月8日,
+}
+
+
+\begin{document}
+
+% ==========================================================
+% ======================论文前置部分==========================
+% ==========================================================
+% 封面
+\coverpage
+
+% 独创性声明【这里可能要替换为扫描版PDF】
+\copyrightpage
+
+% 中英文摘要
+\include{data/abstract}
+
+% 目录
+\vspace*{-5em}
+\tableofcontents
+\thispagestyle{frontmatterstyle}
+\addcontentsline{toc}{chapter}{目 \quad 录}
+\clearpage
+
+% 插图和附表清单
+\listoffiguresandtables
+
+% ==========================================================
+% ======================论文主体部分==========================
+% ==========================================================
+% 从第一页开始 恢复阿拉伯数字页码
+\pagenumbering{arabic}
+
+% 正文写作，学位论文篇幅较长，建议分章节写作，每章节一个文件
+\include{data/chapter1}
+\include{data/chapter2}
+
+% ==========================================================
+% ======================论文结尾部分==========================
+% ==========================================================
+
+% 参考文献，目前使用的后端为biber，编译方式为xelatex-biber-xelatex-xelatex
+\begin{reference}
+  \printbibliography[heading=none]
+\end{reference}
+
+% 附录
+
+% 索引
+
+% 作者简历及在学期间所取得的科研成果
+\include{data/resume}
+
+% 致谢
+\include{data/acknowledgements}
+
+\end{document}

@@ -1,0 +1,32 @@
+\chapter{引用文献的标注}
+
+  目前使用的后端为biber，编译方式为xelatex-biber-xelatex-xelatex
+  
+  
+  \section{顺序编码制}
+  
+  在顺序编码制下，默认的命令同一样，序号置于方括号中，
+  引文页码会放在括号外。
+  统一处引用的连续序号会自动用短横线连接。
+  
+  \begin{tabular}{l@{\quad$\Rightarrow$\quad}l}
+    \verb|\cite{zhangkun1994}|               & \cite{zhangkun1994}               \\
+    \verb|\citet{zhangkun1994}|              & \citet{zhangkun1994}              \\
+    \verb|\citep{zhangkun1994}|              & \citep{zhangkun1994}              \\
+    \verb|\cite[42]{zhangkun1994}|           & \cite[42]{zhangkun1994}           \\
+    \verb|\cite{zhangkun1994,zhukezhen1973}| & \cite{zhangkun1994,zhukezhen1973} \\
+  \end{tabular}
+
+
+  注意，引文参考文献的每条都要在正文中标注
+  \cite{zhangkun1994,zhukezhen1973,dupont1974bone,zhengkaiqing1987,%
+    jiangxizhou1980,jianduju1994,merkt1995rotational,mellinger1996laser,%
+    bixon1996dynamics,mahui1995,carlson1981two,taylor1983scanning,%
+    taylor1981study,shimizu1983laser,atkinson1982experimental,%
+    kusch1975perturbations,guangxi1993,huosini1989guwu,wangfuzhi1865songlun,%
+    zhaoyaodong1998xinshidai,biaozhunhua2002tushu,chubanzhuanye2004,%
+    who1970factors,peebles2001probability,baishunong1998zhiwu,%
+    weinstein1974pathogenic,hanjiren1985lun,dizhi1936dizhi,%
+    tushuguan1957tushuguanxue,aaas1883science,fugang2000fengsha,%
+    xiaoyu2001chubanye,oclc2000about,scitor2000project%
+  }。
