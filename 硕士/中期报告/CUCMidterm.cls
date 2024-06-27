@@ -284,8 +284,11 @@
     \end{titleleft}
     % 培养单位建议
     \begin{titleleft}{培养单位\\建议}
-        #5
-        \\
+        \vspace{3em}
+        #5 
+        \newline
+        \vspace{2em}
+        
         % \end{flushleft}
         \hspace{2em} 主管领导：（签字）\\
         \vspace{1em}
